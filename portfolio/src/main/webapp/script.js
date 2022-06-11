@@ -26,3 +26,13 @@ function addRandomhobbies() {
   const hobbyContainer = document.getElementById('hobby-container');
   hobbyContainer.innerText = hobby;
 }
+
+async function showServerResponse() {
+
+    const responseFromServer = await fetch('/hello');
+    const textFromResponse = await responseFromServer.text();
+  
+    const responseContainer = document.getElementById('response-container');
+    responseContainer.innerText = textFromResponse;
+}
+
