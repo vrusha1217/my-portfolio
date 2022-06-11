@@ -30,9 +30,9 @@ function addRandomhobbies() {
 async function showServerResponse() {
 
     const responseFromServer = await fetch('/hello');
-    const textFromResponse = await responseFromServer.text();
-  
+    const myObject = await responseFromServer.json();
     const responseContainer = document.getElementById('response-container');
+    const textFromResponse= myObject[Math.floor(Math.random() * myObject.length)]
     responseContainer.innerText = textFromResponse;
 }
 
