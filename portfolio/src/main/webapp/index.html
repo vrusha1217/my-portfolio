@@ -16,8 +16,14 @@
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Some of my many hobbies are:</p>
       <button onclick="addRandomhobbies()">Hobby</button>
-      <div id="hobby-container"></div>
+      <div id="hobby-container">
       <p>Fun experience: I was in a student exchange program, where I got to spend an entire month in France with a host family.</p> 
+      <form action= "/form-handler" method= "POST">
+        <p>Send me a message!</p>
+        <textarea name="text-input"></textarea>
+        <br/>
+        <input type="submit" />
+        </form>
     </div>
   </body>
 </html>
