@@ -8,12 +8,22 @@
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <h1>Vrusha Shah's Portfolio</h1>
+      <img src="/images/me.jpg" class="centerImage" width = "200" height="300" alt=""/>
+      <p>I am a third year computer science student at Wilfrid Laurier University.</p>
+      <p><a href= "www.linkedin.com/in/vrusha-shah">LinkedIn</a></p>
+      <p><a href= "https://github.com/vrusha1217">GitHub</a></p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+      <p>Some of my many hobbies are:</p>
+      <button onclick="addRandomhobbies()">Hobby</button>
+      <div id="hobby-container">
+      <p>Fun experience: I was in a student exchange program, where I got to spend an entire month in France with a host family.</p> 
+      <form action= "/form-handler" method= "POST">
+        <p>Send me a message!</p>
+        <textarea name="text-input"></textarea>
+        <br/>
+        <input type="submit" />
+        </form>
     </div>
   </body>
 </html>
