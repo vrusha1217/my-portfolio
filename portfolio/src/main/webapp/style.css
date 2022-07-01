@@ -3,7 +3,9 @@
   margin-right: auto;
   width: 650px;
 }
-
 #hobby-container {
   margin-top: 20px;
+}
+body {
+    background-color: lavender;
 }
